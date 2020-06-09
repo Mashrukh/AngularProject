@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "my-dev-app-ab264": {
+      "hosting": {
+        "angularProject": [
+          "my-dev-app-ab264"
+        ]
+      }
+    }
+  }
+}
