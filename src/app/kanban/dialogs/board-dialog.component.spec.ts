@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShellComponent } from './shell.component';
+import { BoardDialogComponent } from './board-dialog.component';
 
-describe('ShellComponent', () => {
-  let component: ShellComponent;
-  let fixture: ComponentFixture<ShellComponent>;
+describe('BoardDialogComponent', () => {
+  let component: BoardDialogComponent;
+  let fixture: ComponentFixture<BoardDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShellComponent ]
+      declarations: [ BoardDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShellComponent);
+    fixture = TestBed.createComponent(BoardDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

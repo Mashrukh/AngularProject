@@ -5,9 +5,10 @@ import { AuthGuard } from './user/auth.guard';
 
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent, canActivate: [AuthGuard]},
+  { path: '', component: HomePageComponent},
   // Dynamically import the user module only when login route is hit. This is to lazy load the user module
-  { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule) }
+  { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+  {path: 'kanban', loadChildren:() => import ('./kanban/kanban.module').then(m=> m.KanbanModule)}
 ];
 
 @NgModule({
